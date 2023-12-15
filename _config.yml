@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Ruizhi Liu / My page"
+title                    : "Ruizhi Liu"
 title_separator          : "-"
 name                     : &name "Ruizhi Liu"
 description              : &description "personal description"
