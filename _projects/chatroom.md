@@ -1,6 +1,6 @@
 ---
 title: "Chatroom Based on Multicast"
-excerpt: "<img src='/images/crawler/image-20210723213938332.png' width='500'>"
+excerpt: "<img src='/images/chatroom/chat.jpg' width='500'>"
 collection: projects
 ---
 
@@ -77,12 +77,7 @@ Messages are sent from three virtual machines respectively, and the information 
 \end{figure}
 
 Send the file test.txt on virtual machine A to the other two virtual machines and receive it successfully.
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{sendfile.jpg}
-\caption{Send a file}
-\label{fig:sendfile}
-\end{figure}
+![sendfile](/images/chatroom/sendfile.jpg)
 
 \begin{figure}[H]
 \centering
@@ -93,12 +88,8 @@ Send the file test.txt on virtual machine A to the other two virtual machines an
 \end{figure}
 
 Test the retransmission mechanism on virtual machine A and virtual machine B, and set the packet loss rate on virtual machine B to 0.5.
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{missingprob.jpg}
-\caption{Loss rate}
-\label{fig:missingprob}
-\end{figure}
+
+![missingprob](/images/chatroom/missingprob.jpg)
 
 Sending the numeric sequence 1,2,3... on virtual machine A and observing that virtual machine B loses message 3.
 \begin{figure}[H]
@@ -119,9 +110,4 @@ When virtual machine B successfully receives message 4, the program checks the m
 \end{figure}
 
 B successfully receives the retransmitted message 3.
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{result.jpg}
-\caption{Retransmission received}
-\label{fig:result}
-\end{figure}
+![result](/images/chatroom/result.jpg)
