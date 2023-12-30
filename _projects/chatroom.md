@@ -56,7 +56,7 @@ The data structure module consists of `Message.java`, `Payload.java`, `Request.j
 
 ## 4 Results
 
-Compile and run the multicast chat program on three virtual machines respectively. The program interface is as follows。
+Compile and run the multicast chat program on three virtual machines respectively. The program interface is as follows.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.4\textwidth]{logon.jpg}
@@ -92,13 +92,8 @@ Test the retransmission mechanism on virtual machine A and virtual machine B, an
 ![missingprob](/images/chatroom/missingprob.jpg)
 
 Sending the numeric sequence 1,2,3... on virtual machine A and observing that virtual machine B loses message 3.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{missA.jpg}
-\includegraphics[width=0.4\textwidth]{missB.jpg}
-\caption{Message loss}
-\label{fig:miss}
-\end{figure}
+
+![missA](/images/chatroom/missA.jpg)![missB](/images/chatroom/missB.jpg)
 
 When virtual machine B successfully receives message 4, the program checks the message sequence and finds that message 3 is lost, so it sends a retransmission request to A. A receives B's retransmission request, retrieves historical messages, obtains the message with sequence number 3, and resends it to B.
 \begin{figure}[H]
