@@ -5,9 +5,9 @@ permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
-redirect_to:
-  - /files/CV.pdf
 ---
+
+<embed src="/files/CV.pdf" type="application/pdf" width="100%" height="100%">
 
 {% include base_path %}
 
