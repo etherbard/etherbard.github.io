@@ -15,4 +15,4 @@ author_profile: true
   {% include archive-single.html %}
 {% endfor %} -->
 
-Ruizhi Liu, Jinhui Li, et al. “A Wireless communication security authentication method based on received signal strength” CN Patent No.111031541. 06 Sep. 2022.
+**Ruizhi Liu**, Jinhui Li, et al. “A Wireless communication security authentication method based on received signal strength” CN Patent No.111031541. 06 Sep. 2022.
