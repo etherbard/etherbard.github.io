@@ -57,35 +57,25 @@ The data structure module consists of `Message.java`, `Payload.java`, `Request.j
 ## 4 Results
 
 Compile and run the multicast chat program on three virtual machines respectively. The program interface is as follows.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{logon.jpg}
-  % \hspace{1in}
-  \includegraphics[width=0.4\textwidth]{chat.jpg}
-\caption{Login and Chatroom}
-\label{fig:logon}
-\end{figure}
+
+![login](/images/chatroom/login.jpg)
+
+![chat](/images/chatroom/chat.jpg)
 
 Messages are sent from three virtual machines respectively, and the information can be successfully received on the other two virtual machines.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.3\textwidth]{vmA.jpg}
-\includegraphics[width=0.3\textwidth]{vmB.jpg}
-\includegraphics[width=0.3\textwidth]{vmC.jpg}
-\caption{Send and receive message}
-\label{fig:message}
-\end{figure}
+
+![vmA](/images/chatroom/vmA.jpg)
+
+![vmB](/images/chatroom/vmB.jpg)
+
+![vmC](/images/chatroom/vmC.jpg)
 
 Send the file test.txt on virtual machine A to the other two virtual machines and receive it successfully.
 ![sendfile](/images/chatroom/sendfile.jpg)
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{receivefile1.jpg}
-\includegraphics[width=\textwidth]{receivefile2.jpg}
-\caption{Receive a file}
-\label{fig:receivefile}
-\end{figure}
+![receivefile1](/images/chatroom/receivefile1.jpg)
+
+![receivefile2](/images/chatroom/receivefile2.jpg)
 
 Test the retransmission mechanism on virtual machine A and virtual machine B, and set the packet loss rate on virtual machine B to 0.5.
 
@@ -93,16 +83,15 @@ Test the retransmission mechanism on virtual machine A and virtual machine B, an
 
 Sending the numeric sequence 1,2,3... on virtual machine A and observing that virtual machine B loses message 3.
 
-![missA](/images/chatroom/missA.jpg)![missB](/images/chatroom/missB.jpg)
+![missA](/images/chatroom/missA.jpg)
+
+![missB](/images/chatroom/missB.jpg)
 
 When virtual machine B successfully receives message 4, the program checks the message sequence and finds that message 3 is lost, so it sends a retransmission request to A. A receives B's retransmission request, retrieves historical messages, obtains the message with sequence number 3, and resends it to B.
-\begin{figure}[H]
-\centering
-\includegraphics[width=\textwidth]{requestA.jpg}
-\includegraphics[width=\textwidth]{requestB.jpg}
-\caption{Retransmission}
-\label{fig:retransmission}
-\end{figure}
+
+![requestA](/images/chatroom/requestA.jpg)
+
+![requestB](/images/chatroom/requestB.jpg)
 
 B successfully receives the retransmitted message 3.
 ![result](/images/chatroom/result.jpg)
