@@ -1,6 +1,6 @@
 ---
 title: "Login through Unified Identity Authentication System of Southeast University Using Python Web Crawler"
-excerpt: "A practice of Python crawler.<br/><img src='/images/crawler/image-20210723213938332.png' height='300'/>"
+excerpt: "A practice of Python crawler.<br/><img src='/images/crawler/image-20210723213938332.png' width='500'>"
 collection: projects
 ---
 
